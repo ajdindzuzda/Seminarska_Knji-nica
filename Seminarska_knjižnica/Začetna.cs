@@ -42,5 +42,17 @@ namespace Seminarska_knjižnica
             Izhod izhodInfo = new Izhod();
             izhodInfo.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Knjižničar knjižničarInfo = new Knjižničar();
+            knjižničarInfo.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Izposoja izposojaInfo = new Izposoja();
+            izposojaInfo.Show();
+        }
     }
 }

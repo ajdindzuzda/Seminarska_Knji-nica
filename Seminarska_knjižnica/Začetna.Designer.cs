@@ -54,13 +54,13 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(269, 22);
+            this.label1.Location = new System.Drawing.Point(225, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(451, 36);
+            this.label1.Size = new System.Drawing.Size(669, 39);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Sistem za upravljanje knjižnice";
+            this.label1.Text = "SISTEM ZA UPRAVLJANJE KNJIŽNICE";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
@@ -121,6 +121,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "Knjižničar";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -131,6 +132,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Posojila";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Začetna
             // 
@@ -143,7 +145,6 @@
             this.Controls.Add(this.panel1);
             this.Name = "Začetna";
             this.Text = "Začetna";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

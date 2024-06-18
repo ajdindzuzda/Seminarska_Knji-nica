@@ -93,6 +93,16 @@ namespace Seminarska_knjižnica.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap knjiznicar {
+            get {
+                object obj = ResourceManager.GetObject("knjiznicar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ozadje {
             get {
                 object obj = ResourceManager.GetObject("ozadje", resourceCulture);

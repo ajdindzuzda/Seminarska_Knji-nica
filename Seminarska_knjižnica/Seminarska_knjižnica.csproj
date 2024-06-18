@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,6 +49,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SqlClient, Version=4.6.1.6, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Data.SqlClient.4.8.6\lib\net461\System.Data.SqlClient.dll</HintPath>
@@ -55,11 +71,23 @@
     <Compile Include="Izhod.Designer.cs">
       <DependentUpon>Izhod.cs</DependentUpon>
     </Compile>
+    <Compile Include="Izposoja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Izposoja.Designer.cs">
+      <DependentUpon>Izposoja.cs</DependentUpon>
+    </Compile>
     <Compile Include="Knjiga.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Knjiga.Designer.cs">
       <DependentUpon>Knjiga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Knjižničar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Knjižničar.Designer.cs">
+      <DependentUpon>Knjižničar.cs</DependentUpon>
     </Compile>
     <Compile Include="Začetna.cs">
       <SubType>Form</SubType>
@@ -78,8 +106,14 @@
     <EmbeddedResource Include="Izhod.resx">
       <DependentUpon>Izhod.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Izposoja.resx">
+      <DependentUpon>Izposoja.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Knjiga.resx">
       <DependentUpon>Knjiga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Knjižničar.resx">
+      <DependentUpon>Knjižničar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Začetna.resx">
       <DependentUpon>Začetna.cs</DependentUpon>
@@ -125,6 +159,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\knjiga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knjiznicar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
